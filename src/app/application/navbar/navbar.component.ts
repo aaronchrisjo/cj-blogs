@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrl: './navbar.component.css'
 })
 export class NavbarComponent {
+  dropdownOpen = false; 
 
+  toggleDropdown(event: Event) {
+    event.preventDefault();
+    this.dropdownOpen = !this.dropdownOpen;
+  }
 }

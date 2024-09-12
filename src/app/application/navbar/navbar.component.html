@@ -6,8 +6,18 @@
       <li>
         <a routerLink="/home" routerLinkActive="text-yellow-500" class="text-white hover:text-yellow-400">Home</a>
       </li>
-      <li>
-        <a routerLink="/services" routerLinkActive="text-yellow-500" class="text-white hover:text-yellow-400">Services</a>
+      <li class="relative">
+        <a href="#" (click)="toggleDropdown($event)" class="flex items-center text-white hover:text-yellow-400">
+          Services
+          <svg class="ml-2 w-4 h-4 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M7 10l5 5 5-5H7z"/>
+          </svg>
+        </a>
+        <ul [ngClass]="{'block': dropdownOpen, 'hidden': !dropdownOpen}" class="absolute left-0 mt-2 space-y-2 bg-gray-700">
+          <li><a href="#" class="block px-4 py-2 text-white hover:bg-gray-600">Web Design</a></li>
+          <li><a href="#" class="block px-4 py-2 text-white hover:bg-gray-600">SEO Optimization</a></li>
+          <li><a href="#" class="block px-4 py-2 text-white hover:bg-gray-600">Content Creation</a></li>
+        </ul>
       </li>
       <li>
         <a routerLink="/about" routerLinkActive="text-yellow-500" class="text-white hover:text-yellow-400">About</a>
