@@ -5,14 +5,14 @@
         Angular Components
     </p>
     <article class="mt-10 text-xl">
-        <p class="mb-6">Components are the basic building blocks of an Angular application. Everything you code will be mostly inside a component. Say, you wanna make an About page, you will generate a component that has the content you need in about and in that component itself you will handle the necessary functions needed for a that page.</p>
+        <p class="mb-6">Components are the basic building blocks of an Angular application. Everything you code will be mostly inside a component. Say, you wanna make an About page, you will generate a component named about, add the content you need and in that component itself you will handle the necessary functions needed for that component. Let's dig a little deeper.</p>
         <p class="mb-6">Let us start by generating a component. To generate a component, use :</p>
         <pre class="bg-gray-800 text-white inline px-2 py-1 whitespace-nowrap">
             <code class="text-sm">
               ng generate component component-name
             </code>
           </pre>
-          <p class="mt-6 mb-6">Now once you have generated this, you get a component as a folder with 4 parts in it :</p>
+          <p class="mt-6 mb-6">Now once you have generated this, you get a component as a folder with 4 parts/files in it :</p>
           <ul class="list-disc list-inside mb-6">
             <li>you-component.component.css</li>
             <li>your-component.component.html</li>
@@ -31,11 +31,11 @@
             <img src="assets/html-code-snippet.png" alt="">
 
             <li class="text-2xl mt-6">your-component.component.spec.ts</li>
-            <p class="mb-6 mt-6">Maybe i'm saying this as a novice but don't touch this file. I really don't have much idea of what it does other than something for testing and as beginners i recommend you don't go digging much deep into it either. A basic idea of what it does is ,It sets up the testing environment, initializes the component, and contains test cases to verify that the component's methods, properties, and template work as expected. This helps ensure the component behaves correctly and integrates properly with other parts of the application.</p>
+            <p class="mb-6 mt-6">Maybe i'm saying this as a novice but don't touch this file. I really don't have much idea of what it does other than something for testing and as beginners i recommend you don't go digging much deep into it either right now. A basic idea of what it does is ,It sets up the testing environment, initializes the component, and contains test cases to verify that the component's methods, properties, and template work as expected. This helps ensure the component behaves correctly and integrates properly with other parts of the application.</p>
             <p class="mb-6">So basically, nothing you need to worry about right now  XD</p>
 
             <li class="text-2xl mt-6">your-component.component.ts</li>
-            <p class="mb-6 mt-6">Now this is a really important file . This is the main part of your component. If you want you have an option to not use the css and html file while writing all its code inside this. The main use of this file is to define all your required functions for the component, initalising constructors and many other things like using ngOnInit which i'm pretty sure you won't understand now. Just know that this is where all the logic required for your component goes. You will get to know more about this when you further dive deep into Angular.</p>
+            <p class="mb-6 mt-6">Now this is a really important file . This is the main part of your component. If you want, you have an option to not use the css and html file while writing all its code inside this. The main use of this file is to define all your required functions for the component, initalising constructors and many other things like using ngOnInit which i'm pretty sure you won't understand right now. Just know that this is where all the logic required for your component goes. You will get to know more about this when you further dive deep into Angular.</p>
             <p class="mb-6">Example :</p>
             <img src="assets/component.ts-code-snippet.png" alt="">
             <p class="mt-6 mb-6">As you can see, here we have a constructor that is injecting the router from angular/router and a function that can be called to navigate to the required component. If this still feels a bit overwhelming, don't worry it gets better :)</p>
