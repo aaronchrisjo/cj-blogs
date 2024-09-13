@@ -4,15 +4,15 @@
         Angular Modules
     </p>
     <article class="mt-10 text-xl">
-        <p class="mb-6">Ok so story time. When i started learning Angular, I made my first application using only standalone components. ie. no modules were used in it. So one of the task i got was to Lazyload the modules in the application and that seemed pretty easy but the part where i got stuck was that i had to cook the whole thing again and make it in the module structure to accomplish that. I thought, why tf should i actually make it as modules when that is not the latest way but after learning that part, i understood that that is actually more simpler to manage the project. What i am trynna say is that even if in your use case you don't need Modules, I 100% recommend you go the modular way atleast while learning.</p>
-        <p class="mb-6">Modules is what that gives a structure to your application. Look at it this way: You have your application and a couple of components like maybe logo,navbar,footer etc. Now all these components as standalone to manage is kinda chaotic when it comes to managing. So when you use modules, you encapsulate these components inside a module. Say you make a module named Structure, now you can add all components such as header,footer,logo,navbar etc. that builds your application structure inside this module and then handle the module as required. It just makes it much simpler and easier to manage.</p>
+        <p class="mb-6">Ok so story time. When i started learning Angular, I made my first application using only standalone components. ie. no modules were used in it. So one of the task i got was to Lazyload these modules in the application and that seemed pretty easy but the part where i got stuck was that i had to cook the whole thing again and make it in the module structure to accomplish that. I thought, why tf should i actually make it as modules when that is not the latest way but after learning the module architecture, i understood that it is actually much more simpler to manage the project. What i am trynna say is that even if in your use case you don't need Modules, I 100% recommend you go the modular way atleast while learning.</p>
+        <p class="mb-6">Modules is what that gives a structure to your application. Look at it this way: You have your application and a couple of components like maybe logo,navbar,footer etc. Now all these components as standalone is kinda chaotic to manage. So when you use modules, you encapsulate these components inside a module. Say you make a module named Structure, now you can add all components such as header,footer,logo,navbar etc. that builds your application structure inside this module and then handle the module as required. It just makes it much simpler and easier to manage.</p>
         <p class="mb-6">Now, when you generate a module, make sure you generate the module with routing module included in it like:</p>
         <pre class="bg-gray-800 text-white inline px-2 py-1 whitespace-nowrap">
             <code class="text-sm">
               ng generate module module-name --routing
             </code>
         </pre>
-        <p class="mt-6 mb-6">When you generate a module this way, it creates a module folder comprising of two files. One is the routing 'routing.module.ts' and other the 'module.ts' file. Now the in the 'routing.module.ts' file, you can handle all the routing as required for that module (don't worry, i'm gonna talk about routing after this) and in the module.ts file you handle all your components of that module, other imports, exports etc.</p>
+        <p class="mt-6 mb-6">When you generate a module this way, it creates a module folder comprising of two files. One is the routing 'routing.module.ts' and other the 'module.ts' file. Now in the 'routing.module.ts' file, you can handle all the routing as required for that module (don't worry, i'm gonna talk about routing after this) and in the module.ts file you can handle all your components of that module, other imports, exports etc.</p>
         <p class="mb-6">Example:</p>
         <ul class="list-decimal list-inside">
             <li class="mb-6">your-module-routing.module.ts</li>
@@ -20,7 +20,7 @@
             <li class="mb-6">your-module.module.ts</li>
             <img src="assets/module.ts.png" alt="" class="mb-6">
         </ul>
-        <p>So far, you must've got a basic idea of the whole structure or arrangment of an Angular application. If not, I recommend you check other resources as well because Angular is a framework where you cannot move forward without understanding the basics properly. Next we move to Routing and you need to have understood everything until written until now to move further.</p>
+        <p>So far, you must've got a basic idea of the whole structure or arrangment of an Angular application. If not, I recommend you check other resources as well because Angular is a framework where you cannot move forward without understanding the basics properly. Next we are moving to Routing and you need to have understood everything written until now to move further.</p>
     </article>
 
 
