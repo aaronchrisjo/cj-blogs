@@ -9,7 +9,7 @@
     <!-- Blog Content -->
     <article class="mt-10 text-xl">
         <p class="mb-6">
-            I am making this mainly so that i can track and go through what all i've learnt in angular and in the process maybe help someone who is maybe facing the same issues as me while getting started with angular. Since this is kind of for myself so i wont be explaining everything too clearly ( it will be mostly theoretical for understanding ) and the angular version i'll be using is Angular v18. If ya'll have any issues while going through, don't mind hitting me up :) 
+            I am making this mainly so that i can track and go through what all i've learnt in angular and in the process maybe help someone who is maybe facing the same issues as me while getting started with angular. Since this is kind of for myself, i wont be explaining everything too clearly ( it will be mostly theoretical for understanding ) and the angular version i'll be using is Angular v18. If ya'll have any issues while going through, don't mind hitting me up :) 
         </p>
         <p class="mb-6">
             Ok so initially when i started with angular, i had a lot of trouble understanding how this whole shit works. Ngl it was like a whole new world in front-end dev. Till then i knew HTML/CSS, a little bit of react and a bit of Javascript. I had done multiple projects using these technologies as well. So starting up with angular was a confidence breaker and most of ya'll getting started might be feeling the same way but don't you worry, i got you! This ain't as hard as it looks. One thing is you need to know how all this shit works and you definitely can't chatgpt your way through this without knowing the basics. So now i'll stop ranting and start.
@@ -22,7 +22,7 @@
         Pre-requisites
     </p>
     <article class="mt-10 text-xl">
-        So a few things i would recommend you need to know before going into Angular is:
+        So a few things i would recommend you need to have and know before going into Angular is:
         <ul class="list-disc list-inside mb-6">
             <li>Angular v18 or above</li>
             <li>HTML</li>
@@ -30,7 +30,7 @@
             <li>Typescript / Javascript (atleast the basics)</li>
         </ul>
         <p class="mb-6">These are must needed for going forward with Angular. Also, you don't need to worry about Typescript as long as you are somewhat familiar with Javascript and can manage that. If you do wanna know more about Typecript just go <a href="https://www.typescriptlang.org/docs/handbook/typescript-from-scratch.html" class="text-blue-300" target="_blank">here</a>.</p>
-        <p>Now i did a lot of chatgpt to learn, so i would always recommend the tools you have at hand as long as you unerstand the working. It's common that many of the new learners feel guilty using tools like chatgpt. Always remember that even if you're using this tools, the more you do it, you are learning and improving work-flow. Dont be shy to use anything that helps you learn.</p>
+        <p>Now i did a lot of chatgpt to learn, so i would always recommend to use the tools you have at hand as long as you unerstand the working. It's common that many of the new learners feel guilty using tools like chatgpt. Always remember that even if you're using these tools, the more you do it, you are learning and improving work-flow. Dont be shy to use anything that helps you learn. Remember there are people who don't upskill even at the availability of these tools. You are definitely one step ahead ;)</p>
     </article>
 
 
@@ -39,9 +39,9 @@
         Basic Angular Structure
     </p>
     <article class="mt-10 text-xl">
-        So on thing while starting up with angular that felt the most overwhelming for me was the angular structure that was different from all other frameworks and technologies i have used. Angular has such a beautiful and organized structure that it looks challenging af in the beginning. But trust me, once you stat thinking th Angular way, i doubt you will go back. Here is a basic structure to get you started :
+        So one thing while starting up with angular that felt the most overwhelming for me was the angular structure that was different from all the other frameworks and technologies i have used. Angular has such a beautiful and organized structure that it looks challenging as fu*k in the beginning. But trust me, once you stat thinking in the Angular way, i doubt you will go back. Here is a basic structure to get you started :
         <img src="assets/angular-project-structure.png" alt="Angular project basic structure" class="mt-6">
-        <p class="mt-6">I am pretty sure ya'll want understand this structure right now but understanding this structure is the first step towards learning angular. I feel once this step is over, it's pretty easy to go forward learning each things. My aim is also to get you guys to understand the structure and beauty of Angular.</p>
+        <p class="mt-6">I am pretty sure ya'll wont understand this structure right now but understanding this structure is the first step towards learning angular. I feel once this step is over, it's pretty easy to go forward learning each things. My aim is also to get you guys to understand the structure and beauty of Angular and make my basics stronger along the way.</p>
     </article>
 
 
@@ -50,10 +50,10 @@
         Standalone VS Modular Architecture
      </p>
      <article class="mt-10 text-xl">
-        Ok so there is 2 ways / 2 structures that are used for building Angular applicatons. One is the Modular structure and one is the Standalone structure. I feel even though the Modular structure is a bit outdated, it is the best way to learn Angular and going forward, it won't be too hard to switch to the Standalone structure. So i will be going forward with the modular structure and if you want to know more about the standalone structure, you can go <a href="https://blogs.halodoc.io/angular-standalone-components-unleashed-exploring-the-magic-of-a-world-without-ngmodule/" target="_blank" class="text-blue-400">here.</a>
+        Ok so there is 2 ways / 2 architectures that are used for building Angular applicatons. One is the Modular architecture and one is the Standalone architecture. I feel even though the Modular architecture is a bit outdated, it is the best way to learn Angular and going forward, it won't be too hard to switch to the Standalone structure. So i will be going forward with the modular architecture and if you want to know more about the standalone architecture, you can go <a href="https://blogs.halodoc.io/angular-standalone-components-unleashed-exploring-the-magic-of-a-world-without-ngmodule/" target="_blank" class="text-blue-400">here.</a>
         <p class="mt-6">This is the basic Module Architecture:</p>
         <img src="assets/angular-module-architecture.png" alt="" class="mt-6 h-1/2">
-        <p class="mt-6">Here, the features you wanna implement in angular are divided into Modules (also called as feature-modules) and the each part of the feature inside that as component. You can build the app the exact way you want it when you use the Module structure.</p>
+        <p class="mt-6">Here, the features you wanna implement in angular are divided into Modules (also called as feature-modules) and the each part of the feature inside that as component. You can build the app the exact way you want it when you use the Module structure. Now when you're doing in the modular structure, the root module/main module is the file named 'app.module.ts'. So when i say root/main module that's the file i am refering to.</p>
         <p class="mt-6 mb-6">Now generally to start an angular application you would use:</p>
         <pre class="bg-gray-800 text-white inline px-2 py-1 whitespace-nowrap">
             <code class="text-sm">
