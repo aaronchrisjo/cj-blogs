@@ -6,6 +6,7 @@ import { WebDevComponent } from './web-dev/web-dev.component';
 import { AngularComponent } from './web-dev/angular/angular.component';
 import { Angular2Component } from './web-dev/angular/angular-2/angular-2.component';
 import { Angular3Component } from './web-dev/angular/angular-3/angular-3.component';
+import { Angular4Component } from './web-dev/angular/angular-4/angular-4.component';
 
 
 @NgModule({
@@ -13,7 +14,8 @@ import { Angular3Component } from './web-dev/angular/angular-3/angular-3.compone
     WebDevComponent,
     AngularComponent,
     Angular2Component,
-    Angular3Component
+    Angular3Component,
+    Angular4Component
   ],
   imports: [
     CommonModule,
