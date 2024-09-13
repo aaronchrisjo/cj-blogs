@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-web-dev',
@@ -6,5 +7,9 @@ import { Component } from '@angular/core';
   styleUrl: './web-dev.component.css'
 })
 export class WebDevComponent {
+  constructor(private router: Router){}
 
+  goToRoute(route:string){
+    this.router.navigate([route])
+  }
 }
