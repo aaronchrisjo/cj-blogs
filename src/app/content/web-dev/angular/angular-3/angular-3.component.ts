@@ -9,7 +9,9 @@ import { Router } from '@angular/router';
 export class Angular3Component {
   constructor(private router: Router){}
 
-  goToRoute(route:string){
-    this.router.navigate([route])
+  goToRoute(route: string) {
+    this.router.navigate([route]).then(() => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });  
+    });
   }
 }

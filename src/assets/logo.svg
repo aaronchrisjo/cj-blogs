@@ -1,14 +1,10 @@
-<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-  <!-- Background Circle -->
-  <circle cx="100" cy="100" r="90" fill="#003366" />
-
-  <!-- Monogram CJ -->
-  <text x="50%" y="50%" font-family="Garamond, serif" font-size="72" font-weight="bold" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">
+<svg width="200" height="100" xmlns="http://www.w3.org/2000/svg">
+  <text x="50%" y="50%" text-anchor="middle" font-family="Arial, sans-serif" font-size="40" fill="#ffffff">
     CJ
   </text>
-
-  <!-- Enterprises Text -->
-  <text x="50%" y="80%" font-family="Garamond, serif" font-size="20" font-weight="normal" fill="#FFFFFF" text-anchor="middle">
-    Enterprises
+  <text x="50%" y="85%" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" fill="#60a5fa">
+    Blogs
   </text>
+  <line x1="40" y1="90" x2="160" y2="90" stroke="#60a5fa" stroke-width="2" />
+  <path d="M 70 30 Q 100 10 130 30" stroke="#60a5fa" stroke-width="3" fill="transparent" />
 </svg>
