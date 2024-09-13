@@ -2,11 +2,11 @@ import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-angular',
-  templateUrl: './angular.component.html',
-  styleUrl: './angular.component.css'
+  selector: 'app-angular-2',
+  templateUrl: './angular-2.component.html',
+  styleUrl: './angular-2.component.css'
 })
-export class AngularComponent {
+export class Angular2Component {
   constructor(private router: Router){}
 
   goToRoute(route:string){
