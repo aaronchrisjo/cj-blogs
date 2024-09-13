@@ -11,7 +11,9 @@ const routes: Routes = [
   {path:'angular', component:AngularComponent},
   {path:'angular-2', component:Angular2Component},
   {path:'angular-3', component:Angular3Component},
-  {path:'angular-4', component:Angular4Component}
+  {path:'angular-4', component:Angular4Component},
+
+  
 ];
 
 @NgModule({

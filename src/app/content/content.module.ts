@@ -7,6 +7,7 @@ import { AngularComponent } from './web-dev/angular/angular.component';
 import { Angular2Component } from './web-dev/angular/angular-2/angular-2.component';
 import { Angular3Component } from './web-dev/angular/angular-3/angular-3.component';
 import { Angular4Component } from './web-dev/angular/angular-4/angular-4.component';
+import { Angular5Component } from './web-dev/angular/angular-5/angular-5.component';
 
 
 @NgModule({
@@ -15,7 +16,8 @@ import { Angular4Component } from './web-dev/angular/angular-4/angular-4.compone
     AngularComponent,
     Angular2Component,
     Angular3Component,
-    Angular4Component
+    Angular4Component,
+    Angular5Component
   ],
   imports: [
     CommonModule,
