@@ -1,0 +1,41 @@
+<div class="bg-gray-950 text-white min-h-screen flex flex-col px-6 lg:px-24 p-12">
+    <p class="mt-7 text-xl">Now there are some things which i doubt i can explain any better than the docs i used so for these topics, i will drop the links from where i learnt or i think will be helpful. If ya'll have any trouble following these also, just hmu :)</p>
+    <ul class="list-disc list-inside mt-6">
+        <li class=""><a href="https://www.tektutorialshub.com/angular/property-binding-in-angular/" target="_blank" class=" text-xl text-blue-500">Property Binding</a></li>
+        <li class="mt-3"><a href="https://www.tektutorialshub.com/angular/class-binding-in-angular/" target="_blank" class=" text-xl text-blue-500">Class Binding</a></li>
+        <li class="mt-3"><a href="https://www.tektutorialshub.com/angular/ngmodel-two-way-data-binding-in-angular/" target="_blank" class=" text-xl text-blue-500">Two way Data Binding</a></li>
+        <li class="mt-3"><a href="https://www.tektutorialshub.com/angular/angular-style-binding/" target="_blank" class=" text-xl text-blue-500">Style Binding</a></li>
+        <li class="mt-3"><a href="https://www.tektutorialshub.com/angular/event-binding-in-angular/" target="_blank" class=" text-xl text-blue-500">Event Binding</a></li>
+    </ul>
+    
+    <p class="mb-6 mt-6 text-xl">These topics are pretty simple and straightforward . Once you have completed these topics, you can go for the next important topic, Directives. Make sure you have a proper understanding of the above topics. Might feel its pretty useless but i feel these topics made it a bit easier for me to understand the further topics.</p>
+
+    <p class="mt-7 text-lg lg:text-4xl font-semibold max-w-3xl text-left">Angular Directives</p>
+    <article class="mt-10 text-xl">
+        <p class="mb-6">Ok so let's start with an example. Assume you have a an element that should be displayed only when the user is logged in. Now what can you do for this? It's as simple as applying an if condition for that element and that's exactly what you can do using these directives. So basically directives are nothing but something that helps us to manipulate the DOM. You can change a DOM element’s appearance, behavior, or layout using these directives. Now there are many of these directives. I will mention a few important ones here and the rest you can look up as you go on building your application.</p>
+        <ul class="list-decimal list-inside">
+            <li>ngFor - For repeating a portion of the HTML template once per each item from an iterable list (Collection).</li>
+            <li class="mt-3">ngIf - To add a condition to add/remove DOM elements.</li>
+            <li class="mt-3 mb-6">ngClass - This allows us to add or remove CSS classes to an HTML element.</li>
+        </ul>
+        <p class="mb-6 text-xl">These are just a few that i constantly use and think plays an important role while creating a web application. You use these a few times in your application and number of times you look at ChatGpt will reduce a lot. Atleast for me it was like that XD.</p>
+        <p class="text-xl mb-6">I will give a small example to show the use-case of ngIf and in that you can notice the syntax we use for using Directives in manipulating the DOM. In this example, I have a favorites button that adds the selected product to a favorites list which is user-based. So, I want this button to be shown in the component only when user is logged in. To accomplish this, I made a function that checks if the user is authenticated and in my HTML, i added ngIf to check if the isAuthenticated function is true or not :</p>
+        <img src="assets/ngIf-example.png" alt="">
+        <p class="mt-6 text-xl">Exactly ! It's as simple as that. Ya'll was worried for nothing.</p>
+    </article>
+
+
+    <!-- Navigation -->
+
+    <div class="flex justify-between items-center mt-10">
+        <!-- Previous Link -->
+        <p class="text-left cursor-pointer">
+          <a class="text-blue-400 font-semibold text-2xl" (click)="goToRoute('/angular-5')">← Prev</a>
+        </p>
+      
+        <!-- Next Link -->
+        <p class="text-right cursor-pointer">
+          <a class="text-blue-400 font-semibold text-2xl" (click)="goToRoute('/angular-7')">Next →</a>
+        </p>
+      </div>
+</div>
