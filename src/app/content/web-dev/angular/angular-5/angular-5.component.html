@@ -1,5 +1,37 @@
 <div class="bg-gray-950 text-white min-h-screen flex flex-col px-6 lg:px-24 p-12"> 
+
+
+  <p class="mb-6 text-xl">Ok so far we know how to start an Angular project, generate modules, generate components and define routes. Now we can check out some simple and cool features there in Angular. But before that, keep this in mind:</p>
+  <p class="mb-6 text-xl">When you want to generate a component as a child of a paticular module, generate the component in this syntax :</p>
+  <pre class="bg-gray-800 text-white inline px-2 py-1 whitespace-nowrap max-w-96">
+    <code class="text-sm">
+      ng generate component module-name/component-name
+    </code>
+  </pre>
+
+
+    <!-- Interface  -->
+    <p class="mt-7 text-lg lg:text-4xl font-semibold max-w-3xl text-left">Angular Interface</p>
+    <article class="mt-10 text-xl">
+      <p class="mb-6">Interface in angular is used to create objects. Let's assume we need to make a product with details such as id, name, description, category, technologies etc. We can create an interface for this with the required details and the data type it requires.</p>
+      <p class="mb-6">To generate an interface, use:</p>
+      <pre class="bg-gray-800 text-white inline px-2 py-1 whitespace-nowrap">
+        <code class="text-sm">
+          ng generate interface interface-name
+        </code>
+      </pre>
+      <p class="mt-6 mb-6">This creates an 'interface-name.ts' file where you can define your interface like :</p>
+      <img src="assets/product-interface.png" alt="" class="mb-6">
+      <p class="mb-6">Now you can import this interface and use it whereever necessary. I feel you will learn to manage and interact more with interfaces when you start a little bit of backend or database managment in your project.</p>
+
+    </article>
+
+
+    <!-- Interpolation  -->
     <p class="mt-7 text-lg lg:text-4xl font-semibold max-w-3xl text-left">Interpolation</p>
+    <article class="mt-10 text-xl">
+      <p class="mb-6">Interpolation is a feature there in i think almost every development platform, like its there in react, vanilla js etc. It is a really cool feature that helps to make our application dynamic. There are many other use cases but i feel the most used/ most applicable example is this. For instance, Assume we have an all-product component that has a function called getAllProducts() which gets all the product details from the backend. Now assume we store this function inside products. So right now products have details of all the products. Now </p>
+  </article>
 
 
 
