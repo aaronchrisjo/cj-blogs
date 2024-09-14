@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { NavigationEnd, Router } from '@angular/router';
-import { filter } from 'rxjs';
+import { filter, switchMap } from 'rxjs';
 
 @Component({
   selector: 'app-angular',
@@ -26,6 +26,11 @@ export class AngularComponent {
 
   goToRoute(route: string, fragment?: string) {
     this.router.navigate([route], { fragment: fragment });
+  }
+  goToRoute1(route: string) {
+    this.router.navigate([route]).then(()=>{
+      window.scrollTo({top:0, behavior:'smooth'})
+    });
   }
 
   goToSection(route: string, sectionId: string) {
