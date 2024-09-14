@@ -8,19 +8,19 @@
   
     <!-- Features Section -->
     <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-4xl mx-auto">
-      <div class="bg-gray-800 p-6 rounded-lg shadow-lg flex flex-col text-center">
+      <div class="bg-gray-800 p-6 rounded-lg shadow-lg flex flex-col text-center cursor-pointer" (click)="goToRoute('https://aaronchrisjoanil.vercel.app/')">
         <h2 class="text-2xl font-semibold mb-4">My Portfolio</h2>
-        <a href="https://aaronchrisjoanil.vercel.app/" target="_blank" class="text-5xl text-center">🗃️</a>
+        <a class="text-5xl text-center">🗃️</a>
       </div>
-      <div class="bg-gray-800 p-6 rounded-lg shadow-lg flex flex-col text-center">
+      <div class="bg-gray-800 p-6 rounded-lg shadow-lg flex flex-col text-center cursor-pointer" (click)="goToRoute('https://github.com/aaronchrisjo')">
         <h2 class="text-2xl font-semibold mb-4">My Github</h2>
-        <a href="https://github.com/aaronchrisjo" target="_blank" class="text-5xl text-center">
+        <a class="text-5xl text-center">
           <i class="fab fa-github"></i>
         </a>
       </div>      
-      <div class="bg-gray-800 p-6 rounded-lg shadow-lg flex flex-col text-center">
+      <div class="bg-gray-800 p-6 rounded-lg shadow-lg flex flex-col text-center cursor-pointer" (click)="goToRoute('https://www.linkedin.com/in/aaronchrisjo/')">
         <h2 class="text-2xl font-semibold mb-4">My Linkedin</h2>
-        <a href="https://www.linkedin.com/in/aaronchrisjo/" target="_blank" class="text-5xl text-center">
+        <a class="text-5xl text-center">
           <i class="fab fa-linkedin"></i>
         </a>
       </div>    
