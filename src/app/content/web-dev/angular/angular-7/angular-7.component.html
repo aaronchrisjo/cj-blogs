@@ -1,7 +1,24 @@
 <div class="bg-gray-950 text-white min-h-screen flex flex-col px-6 lg:px-24 p-12"> 
     <p id="services" class="mt-7 text-lg lg:text-4xl font-semibold max-w-3xl text-left">Angular Services & Dependency Injection</p>
     <article class="mt-10 text-xl">
-        <p class="mb-6">This is a really important and cool topic. A core feature of Angular. Best way to explain this is with an example of Authentication. Now when we want to implement authentication, there are a set of function you need to implement to make this possible</p>
+        <p class="mb-6">This is a really important and cool topic. A core feature of Angular. Best way to explain this is with an example of Authentication. Now when we want to implement authentication, there are a set of function you need to implement to make this possible. So where can you make these functions? Yes, you can do it in your component.ts and then use these functions in your HTML. But what about when you want these authentication functions again to check an isAuthenticated condition for instance? You will have to copy-paste or make the whole Authentication function again. If you follow this method, there are two major drawbacks : 1) You have to keep repeating your code. 2) It takes up unnecessary space. But by using services, you can solve this problem easily.</p>
+        <p class="mb-6">So when you use services, you can keep all your necessary and common authentication functions inside this service and then import and inject the service into your component whenever and wherever necessary. Basicaly you just need to create this service once and use in multiple components as required. Authentication is one of the most common use case. Other than that you can use services for managing theme, managing objects etc.</p>
+        <p class="mb-6">Now using services in your project is really easy. It can be done in 3 simple steps :</p>
+        <ul class="list-decimal list-inside">
+            <li class="mb-4">Generate a service from terminal with the command :</li>
+            <pre class="bg-gray-800 text-white inline px-2 py-1 whitespace-nowrap">
+                <code class="text-sm">
+                  ng generate service service-name
+                </code>
+            </pre>
+            <li class="mb-4 mt-4">Create and define the functions necassary for your service (inside 'service-name.service.ts') :</li>
+            <img src="assets/service-page.png" alt="">
+            <li class="mb-4 mt-4">Now just import and inject this service into your required 'component.ts' file.</li>
+            <img src="assets/service-inject.png" alt="">
+            <p class="mt-4">I am pretty sure most of you didn't get that inject part. Lemme give a small explanation: How we basically inject is, we first initialise this function inside a constructor like eg.( private authService: AuthService ). That's it now your AuthenticationService functions can be used in this component. Now there are many other things like observables, eventemitter etc. in there. Ignore those for now.</p>
+            <p class="mt-4 mb-4">Now same way, you can inject other dependancies to your component like (private routes:Routes) for managing routes or (private location:Location) for giving specific location instructions.</p>
+    
+        </ul>
     </article>
 
 
