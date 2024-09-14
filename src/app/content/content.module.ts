@@ -8,6 +8,7 @@ import { Angular2Component } from './web-dev/angular/angular-2/angular-2.compone
 import { Angular3Component } from './web-dev/angular/angular-3/angular-3.component';
 import { Angular4Component } from './web-dev/angular/angular-4/angular-4.component';
 import { Angular5Component } from './web-dev/angular/angular-5/angular-5.component';
+import { RandomComponent } from './random/random.component';
 
 
 @NgModule({
@@ -17,7 +18,8 @@ import { Angular5Component } from './web-dev/angular/angular-5/angular-5.compone
     Angular2Component,
     Angular3Component,
     Angular4Component,
-    Angular5Component
+    Angular5Component,
+    RandomComponent
   ],
   imports: [
     CommonModule,
