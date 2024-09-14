@@ -2,23 +2,39 @@
     <!-- Main Heading -->
     <h1 class="text-4xl lg:text-5xl font-bold text-center">My Angular Journey</h1>
 
-     <!-- Table of Contents -->
-     <p class="mt-7 text-lg lg:text-4xl font-semibold max-w-3xl text-left">
+
+     <!-- Disclaimer -->
+     <div class="mt-7 max-w-7xl mx-auto border-l-4 border-yellow-500 bg-gray-900 text-yellow-500 p-6 rounded-md shadow-lg">
+        <p class="text-2xl lg:text-3xl font-semibold flex items-center">
+            ⚠️ Disclaimer
+        </p>
+        <p class="mt-4 text-lg lg:text-xl">
+            This is not an official full Angular Course. These are just some core Angular topics I had trouble with during my initial Angular days. Just explaining these topics from my POV. Please have a proper full-course docs side by side while going through this. This is not to teach but just to make your journey easier.
+        </p>
+    </div>
+    
+
+    <!-- Table of Contents -->
+<div class="mt-7 max-w-3xl mx-auto border border-gray-300 rounded-lg p-6 bg-gray-950 shadow-lg">
+    <p class="text-lg lg:text-4xl font-semibold text-left border-b-2 border-gray-400 pb-2 mb-4">
         Table of Contents
     </p>
-    <ul class="mt-4 text-xl list-disc list-inside">
-        <li><a (click)="goToSection1('introduction')" class="text-blue-300 cursor-pointer">Introduction</a></li>
-        <li><a (click)="goToSection1('pre-requisites')" class="text-blue-300 cursor-pointer">Pre-requisites</a></li>
-        <li><a (click)="goToSection1('structure')" class="text-blue-300 cursor-pointer">Basic Angular Structure</a></li>
-        <li><a (click)="goToSection1('stvmd')" class="text-blue-300 cursor-pointer">Standalone vs Modular Architecture</a></li>
-        <li><a (click)="goToRoute('/angular-2')" class="text-blue-300 cursor-pointer">Angular Components</a></li>
-        <li><a (click)="goToRoute('/angular-3')" class="text-blue-300 cursor-pointer">Angular Modules</a></li>
-        <li><a (click)="goToRoute('/angular-4')" class="text-blue-300 cursor-pointer">Routing in Angular</a></li>
-        <li><a (click)="goToSection('/angular-5','interface')" class="text-blue-300 cursor-pointer">Angular Interface</a></li>
-        <li><a (click)="goToSection('/angular-5','interpolation')" class="text-blue-300 cursor-pointer">Angular Interpolation</a></li>
-        <li><a (click)="goToSection('/angular-6','directives')" class="text-blue-300 cursor-pointer">Angular Directives</a></li>
-        <li><a (click)="goToSection('/angular-7','services')" class="text-blue-300 cursor-pointer">Services & Dependancy Injection</a></li>
-     </ul>
+    <ul class="mt-4 text-xl list-disc list-inside space-y-3">
+        <li><a (click)="goToSection1('introduction')" class="text-blue-500 hover:underline cursor-pointer">Introduction</a></li>
+        <li><a (click)="goToSection1('pre-requisites')" class="text-blue-500 hover:underline cursor-pointer">Pre-requisites</a></li>
+        <li><a (click)="goToSection1('structure')" class="text-blue-500 hover:underline cursor-pointer">Basic Angular Structure</a></li>
+        <li><a (click)="goToSection1('stvmd')" class="text-blue-500 hover:underline cursor-pointer">Standalone vs Modular Architecture</a></li>
+        <li><a (click)="goToSection('/angular-2','component')" class="text-blue-500 hover:underline cursor-pointer">Angular Components</a></li>
+        <li><a (click)="goToSection('/angular-3','module')" class="text-blue-500 hover:underline cursor-pointer">Angular Modules</a></li>
+        <li><a (click)="goToSection('/angular-4','routing')" class="text-blue-500 hover:underline cursor-pointer">Routing in Angular</a></li>
+        <li><a (click)="goToSection('/angular-5','interface')" class="text-blue-500 hover:underline cursor-pointer">Angular Interface</a></li>
+        <li><a (click)="goToSection('/angular-5','interpolation')" class="text-blue-500 hover:underline cursor-pointer">Angular Interpolation</a></li>
+        <li><a (click)="goToSection('/angular-6','directives')" class="text-blue-500 hover:underline cursor-pointer">Angular Directives</a></li>
+        <li><a (click)="goToSection('/angular-7','services')" class="text-blue-500 hover:underline cursor-pointer">Services & Dependency Injection</a></li>
+    </ul>
+</div>
+
+
     
     <!-- Introduction -->
     <p id="introduction" class="mt-7 text-lg lg:text-4xl font-semibold max-w-3xl text-left">
