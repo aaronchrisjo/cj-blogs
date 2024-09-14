@@ -12,6 +12,7 @@ import { RandomComponent } from './random/random.component';
 import { Amgular6Component } from './web-dev/angular/amgular-6/amgular-6.component';
 import { Angular6Component } from './web-dev/angular/angular-6/angular-6.component';
 import { Angular7Component } from './web-dev/angular/angular-7/angular-7.component';
+import { Angular8Component } from './web-dev/angular/angular-8/angular-8.component';
 
 
 @NgModule({
@@ -25,7 +26,8 @@ import { Angular7Component } from './web-dev/angular/angular-7/angular-7.compone
     RandomComponent,
     Amgular6Component,
     Angular6Component,
-    Angular7Component
+    Angular7Component,
+    Angular8Component
   ],
   imports: [
     CommonModule,

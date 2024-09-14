@@ -9,6 +9,7 @@ import { Angular5Component } from './web-dev/angular/angular-5/angular-5.compone
 import { RandomComponent } from './random/random.component';
 import { Angular6Component } from './web-dev/angular/angular-6/angular-6.component';
 import { Angular7Component } from './web-dev/angular/angular-7/angular-7.component';
+import { Angular8Component } from './web-dev/angular/angular-8/angular-8.component';
 
 const routes: Routes = [
   {path:'web-dev', component:WebDevComponent},
@@ -22,6 +23,7 @@ const routes: Routes = [
   {path:'angular-5', component:Angular5Component},
   {path:'angular-6', component:Angular6Component},
   {path:'angular-7', component:Angular7Component},
+  {path:'angular-8', component:Angular8Component},
 
 
 ];
