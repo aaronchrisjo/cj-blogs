@@ -1,9 +1,27 @@
 <div class="bg-gray-950 text-white min-h-screen flex flex-col px-6 lg:px-24 p-12">
     <!-- Main Heading -->
     <h1 class="text-4xl lg:text-5xl font-bold text-center">My Angular Journey</h1>
+
+     <!-- Table of Contents -->
+     <p class="mt-7 text-lg lg:text-4xl font-semibold max-w-3xl text-left">
+        Table of Contents
+    </p>
+    <ul class="mt-4 text-xl list-disc list-inside">
+        <li><a (click)="goToSection1('introduction')" class="text-blue-300 cursor-pointer">Introduction</a></li>
+        <li><a (click)="goToSection1('pre-requisites')" class="text-blue-300 cursor-pointer">Pre-requisites</a></li>
+        <li><a (click)="goToSection1('structure')" class="text-blue-300 cursor-pointer">Basic Angular Structure</a></li>
+        <li><a (click)="goToSection1('stvmd')" class="text-blue-300 cursor-pointer">Standalone vs Modular Architecture</a></li>
+        <li><a (click)="goToRoute('/angular-2')" class="text-blue-300 cursor-pointer">Angular Components</a></li>
+        <li><a (click)="goToRoute('/angular-3')" class="text-blue-300 cursor-pointer">Angular Modules</a></li>
+        <li><a (click)="goToRoute('/angular-4')" class="text-blue-300 cursor-pointer">Routing in Angular</a></li>
+        <li><a (click)="goToSection('/angular-5','interface')" class="text-blue-300 cursor-pointer">Angular Interface</a></li>
+        <li><a (click)="goToSection('/angular-5','interpolation')" class="text-blue-300 cursor-pointer">Angular Interpolation</a></li>
+        <li><a (click)="goToSection('/angular-6','directives')" class="text-blue-300 cursor-pointer">Angular Directives</a></li>
+        <li><a (click)="goToSection('/angular-7','services')" class="text-blue-300 cursor-pointer">Services & Dependancy Injection</a></li>
+     </ul>
     
     <!-- Introduction -->
-    <p class="mt-7 text-lg lg:text-4xl font-semibold max-w-3xl text-left">
+    <p id="introduction" class="mt-7 text-lg lg:text-4xl font-semibold max-w-3xl text-left">
         Introduction
     </p>
     <!-- Blog Content -->
@@ -18,7 +36,7 @@
 
 
     <!-- Pre-requisites -->
-    <p class="mt-7 text-lg lg:text-4xl font-semibold max-w-3xl text-left">
+    <p id="pre-requisites" class="mt-7 text-lg lg:text-4xl font-semibold max-w-3xl text-left">
         Pre-requisites
     </p>
     <article class="mt-10 text-xl">
@@ -35,7 +53,7 @@
 
 
     <!-- Basic Structure -->
-    <p class="mt-7 text-lg lg:text-4xl font-semibold max-w-3xl text-left">
+    <p id="structure" class="mt-7 text-lg lg:text-4xl font-semibold max-w-3xl text-left">
         Basic Angular Structure
     </p>
     <article class="mt-10 text-xl">
@@ -46,7 +64,7 @@
 
 
     <!-- Standalone VS Modular Structure -->
-     <p class="mt-7 text-lg lg:text-4xl font-semibold max-w-3xl text-left">
+     <p id="stvmd" class="mt-7 text-lg lg:text-4xl font-semibold max-w-3xl text-left">
         Standalone VS Modular Architecture
      </p>
      <article class="mt-10 text-xl">
